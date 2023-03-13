@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Duplicates element in Array</title>
+    <script>
+      let strArray = ["q", "q", "w", "w", "w", "e", "i", "u", "r"];
+      let findDuplicates = (arr) =>
+        arr.filter((item, index) => arr.indexOf(item) != index);
+
+      console.log(findDuplicates(strArray)); // All duplicates
+      console.log([...new Set(findDuplicates(strArray))]); // Unique duplicates
+
+      //Method 2
+
+      // const duplicatesArray = [1, 2, 3, 4, 5, 6, 6, 6, 6, 7, 7, 8, 9];
+      // const duplicates = duplicatesArray.filter(
+      //   (ele, index, arr) => arr.indexOf(ele) != index
+      // );
+      // console.log(duplicates);
+    </script>
+  </head>
+  <body>
+    <h1>Find Duplicates in Array</h1>
+  </body>
+</html>

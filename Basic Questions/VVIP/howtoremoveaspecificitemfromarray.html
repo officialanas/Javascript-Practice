@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to remove a specific item from an array</title>
+    <script>
+      //1
+      //remove a specific item or one array from an array
+      //   const removeItemOnce = (arr, value) => {
+      //     let index = arr.indexOf(value);
+      //     if (index > -1) {
+      //       arr.splice(index, 1);
+      //     }
+      //     return arr;
+      //   };
+      //   console.log(removeItemOnce([2, 3, 5, 4, 1, 5, 3, 2], 3));
+      //(7) [2, 5, 4, 1, 5, 3, 2]
+
+      // 2
+      // remove all same element
+      //   const removeItemAll = (arr, value) => {
+      //     let i = 0;
+      //     while (i < arr.length) {
+      //       if (arr[i] === value) {
+      //         arr.splice(i, 1);
+      //       } else {
+      //         ++i;
+      //       }
+      //     }
+      //     return arr;
+      //   };
+      //   console.log(removeItemAll([2, 3, 5, 4, 1, 5, 3, 2], 5));
+
+      // 3     shortcut of two
+      //   const removeItemWithFilter = (arr, value) => {
+      //     arr = arr.filter((ele) => ele !== value);
+      //     return arr;
+      //   };
+      //   console.log(removeItemWithFilter([2, 3, 5, 4, 1, 5, 3, 2], 5));
+
+      // 4   remove with same match
+      //   let arr1 = [2, 3, 4, 5];
+      //   let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      //   const remove = (arr11, arr22) => {
+      //     arr22 = arr22.filter((ele) => !arr1.includes(ele));
+      //     return arr22;
+      //   };
+      //   console.log(remove(arr1, arr2)); //  [1, 6, 7, 8]
+    </script>
+  </head>
+  <body>
+    <h1>remove a specific item from an array</h1>
+  </body>
+</html>

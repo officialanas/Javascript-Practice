@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Armstrong Number</title>
+    <script>
+      // 153  = 1*1*1 + 5*5*5 + 3*3*3 = Armstrong Number
+      //or
+      //371 = 3*3*3  + 7*7*7  +  1*1*1
+      var number = prompt("Please ENter a number");
+      var temp = number;
+      var noOfDIgits = number.toString().length;
+      var sum = 0;
+      while (temp > 0) {
+        var digit = temp % 10;
+        sum += digit ** noOfDIgits;
+        temp = parseInt(temp / 10);
+      }
+      if (sum == number) {
+        console.log(`${number} is an Armstrong Number`);
+      } else {
+        console.log(`${number} is not an Armstrong Number`);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Check Armstrong Number</h1>
+  </body>
+</html>

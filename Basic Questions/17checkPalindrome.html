@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHeck Palindrome using array Methods</title>
+    <script>
+      //Palindrome is same forward or backword ex -dad  , madam
+      // dad , madam - split() , reverse(), join()
+      var string = prompt("enter the string");
+      var stringArray = string.split("");
+      var stringrevese = stringArray.reverse();
+      var revJoin = stringrevese.join("");
+
+      if (string === revJoin) {
+        console.log(`${string} : Is Palindrome`);
+      } else {
+        console.log(`${string} : Is not a  Palindrome`);
+      }
+      console.log("Revere the String -  " + revJoin);
+    </script>
+  </head>
+  <body>
+    <h1>CHeck Palindrome using array Methods</h1>
+  </body>
+</html>

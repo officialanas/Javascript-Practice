@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Largest Number Among 3</title>
+    <script>
+      function check(p, q, r) {
+        if (p >= q && p >= r) {
+          return p;
+        } else if (q >= p && q >= r) {
+          return q;
+        } else {
+          return r;
+        }
+      }
+      var a = prompt("Please Enter First  Number");
+      var b = prompt("Please Enter Second Number");
+      var c = prompt("Please Enter Third Number");
+      //var x = Math.max(a, b, c);
+      //or
+      var x = check(a, b, c);
+      console.log(`${a},${b},${c}: Largest = ${x}`);
+    </script>
+  </head>
+  <body>
+    <h1>Find Largest Number Among 3 Number</h1>
+  </body>
+</html>

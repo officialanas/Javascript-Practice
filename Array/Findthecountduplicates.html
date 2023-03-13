@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the count of duplicates</title>
+    <script>
+      var arr = ["a", "b", "c", "d", "d", "e", "a", "b", "b", "a", "b"];
+      var map = arr.reduce(function (prev, cur) {
+        prev[cur] = (prev[cur] || 0) + 1;
+        return prev;
+      }, []);
+      console.log(map);
+    </script>
+  </head>
+  <body>
+    <h1>Find the count of duplicates</h1>
+  </body>
+</html>

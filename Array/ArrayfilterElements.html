@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Sorting</title>
+    <script>
+      let cities = [
+        { name: "Los Angeles", population: 3792621 },
+        { name: "New York", population: 8175133 },
+        { name: "Chicago", population: 2695598 },
+        { name: "Houston", population: 2099451 },
+        { name: "Philadelphia", population: 1526006 },
+      ];
+      //1st solution
+      // let bigCities = [];
+      // for (let i = 0; i < cities.length; i++) {
+      //   if (cities[i].population > 3000000) {
+      //     bigCities.push(cities[i]);
+      //   }
+      // }
+      // console.log(bigCities);
+
+      //2nd solution
+      // let bigCities = cities.filter((city) => city.population > 3000000);
+      // console.log(bigCities);
+
+      //3rd solution
+      //cities.filter((city) => city.population < 3000000);
+      //let bigCities = cities.sort((c1, c2) => c1.population - c2.population);
+      // let bigCities = cities.map((city) =>
+      //   console.log(city.name + ":" + city.population)
+      // );
+      //console.table(bigCities);
+    </script>
+  </head>
+  <body>
+    <h1>Array Sorting</h1>
+  </body>
+</html>

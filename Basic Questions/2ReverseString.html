@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Stirng</title>
+    <script>
+      function reverseString(str) {
+        let stringRev = "";
+        for (let i = str.length; i >= 0; i--) {
+          stringRev += str.charAt(i);
+        }
+        return stringRev;
+      }
+
+      console.log(reverseString("Hello"));
+
+      // Output: olleH
+    </script>
+  </head>
+  <body>
+    <h1>Reverse Stirng</h1>
+  </body>
+</html>

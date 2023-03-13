@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Apply Bind</title>
+    <script>
+      //1
+      //Call
+      // var person1 = { firstName: "Jon", lastName: "Kuperman" };
+      // var person2 = { firstName: "Kelly", lastName: "King" };
+      // function say(greeting) {
+      //   console.log(greeting + " " + this.firstName + " " + this.lastName);
+      // }
+
+      // say.call(person1, "Hello"); // Hello Jon Kuperman
+      // say.call(person2, "Hello"); // Hello Kelly King
+
+      //2
+      //Apply
+      var person1 = { firstName: "Jon", lastName: "Kuperman" };
+      var person2 = { firstName: "Kelly", lastName: "King" };
+
+      function say(greeting) {
+        console.log(greeting + " " + this.firstName + " " + this.lastName);
+      }
+
+      say.apply(person1, ["Hello"]); // Hello Jon Kuperman
+      say.apply(person2, ["Hello"]); // Hello Kelly King
+
+      //3
+      // Bind
+      // var person1 = { firstName: "Jon", lastName: "Kuperman" };
+      // var person2 = { firstName: "Kelly", lastName: "King" };
+
+      // function say() {
+      //   console.log("Hello " + this.firstName + " " + this.lastName);
+      // }
+
+      // var sayHelloJon = say.bind(person1);
+      // var sayHelloKelly = say.bind(person2);
+
+      // sayHelloJon(); // Hello Jon Kuperman
+      // sayHelloKelly(); // Hello Kelly King
+    </script>
+  </head>
+  <body>
+    <h1>Call Apply Bind</h1>
+  </body>
+</html>

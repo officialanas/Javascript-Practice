@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array unshift</title>
+    <script>
+      // 1) ques Using the JavaScript Array
+      //unshift() method to prepend an element to an array
+      // let numbers = [30, 40];
+      // const length = numbers.unshift(20);
+      // console.log(length); // 3
+      // console.log(numbers); // [20,30,40]
+
+      // 2 ques
+      // Removing Elements from Beginning of a JavaScript Array
+      // var ar = ["zero", "one", "two", "three"];
+      // ar.shift(); // returns "zero"
+      // console.log(ar); // ["one", "two", "three"]
+
+      //3 ques
+      // Using Splice to Remove Array Elements in JavaScript
+      // var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // var removed = arr.splice(2, 6);
+      // console.log(removed); // (6) [3, 4, 5, 6, 7, 8]
+
+      // 4 Removing Array Items By Value Using Splice
+      // var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // for (var i = 0; i < arr.length; i++) {
+      //   if (arr[i] === 5) {
+      //     arr.splice(i, 1);
+      //   }
+      // }
+      // console.log(arr); //=> [1, 2, 3, 4, 6, 7, 8, 9, 0]
+
+      //5 Using the Array filter Method to Remove Items By Value
+      //var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // var filtered = array.filter(function (value, index, arr) {
+      //   return value > 5;
+      // });
+      // console.log(filtered);
+      //filtered => [6, 7, 8, 9]
+      //array => [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+      // 6 Making a Remove Method
+      // var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // function arrayRemove(arr, value) {
+      //   return arr.filter(function (ele) {
+      //     return ele != value;
+      //   });
+      // }
+      // var result = arrayRemove(array, 6);
+      // console.log(result);
+      // // result = [1, 2, 3, 4, 5, 7, 8, 9, 0]
+
+      // 6 Explicitly Remove Array Elements Using the Delete Operator
+      // var ar = [1, 2, 3, 4, 5, 6];
+      // delete ar[4]; // delete element with index 4
+      // console.log(ar);
+      // [1, 2, 3, 4, undefined, 6]
+      // alert(ar);
+      // 1,2,3,4,,6
+    </script>
+  </head>
+  <body>
+    <h1>Array unshift</h1>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Armstrong Number in an Interval</title>
+    <script>
+      // 153  = 1*1*1 + 5*5*5 + 3*3*3 = Armstrong Number
+      var a = prompt("Please enter lower number");
+      var b = prompt("Please enter lower number");
+      for (var i = a; i <= b; i++) {
+        var temp = i;
+        var noOfDigit = i.toString().length;
+        var sum = 0;
+        while (temp > 0) {
+          var digit = temp % 10;
+          temp = parseInt(temp / 10);
+          sum += digit ** noOfDigit;
+        }
+        if (sum == i) {
+          console.log(i);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Find Armstrong Number in an Interval</h1>
+  </body>
+</html>

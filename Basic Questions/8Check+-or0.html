@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check + - or Zero</title>
+    <script>
+      function check() {
+        var value = document.getElementById("data").value;
+        //var res = Math.sign(value);
+        if (value > 0) {
+          res = `${value} is Positive Number`;
+        } else if (value < 0) {
+          res = `${value} is Negative Number`;
+        } else if (value == 0) {
+          res = ` ${value} is zero`;
+        } else {
+          res = `${value} is Not a  Number`;
+        }
+        document.getElementById("res").innerText = res;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Check + - or zero</h1>
+    <input type="" name="" id="data" />
+    <button onclick="check()">Check</button>
+    <h1 id="res"></h1>
+  </body>
+</html>

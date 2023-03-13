@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currying</title>
+    <script>
+      //  1 = normal currying
+
+      // function add(a) {
+      //   return function (b) {
+      //     return function (c) {
+      //       return a + b + c;
+      //     };
+      //   };
+      // }
+      // const res = add(2)(3)(4);
+      // console.log(res);
+
+      // 2 = Infinite currying
+
+      // function add(a) {
+      //   return function (b) {
+      //     if (b) return add(a + b);
+      //     return a;
+      //   };
+      // }
+      // const res = add(2)(3)(4)(5)(6)();
+      // console.log(res);
+    </script>
+  </head>
+  <body>
+    <h1>Currying</h1>
+  </body>
+</html>

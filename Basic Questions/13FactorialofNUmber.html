@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial of a Number</title>
+    <script>
+      var number = prompt("ENter the Number");
+      var fact = 1;
+      if (number == 0) {
+        console.log(`The Factorial of ${number} is 1`);
+      } else if (number < 0) {
+        console.log(`The Factorial of -ve number is Not Possible${number}`);
+      } else {
+        for (var i = 1; i <= number; i++) {
+          fact = fact * i;
+          console.log(`The Factorial of ${number} is ${fact}`);
+        }
+      }
+
+      // Method 2 - using Recursion
+      // var number = prompt("Please enter a number");
+      // var fact = 1;
+      // function factr(n) {
+      //   if (n > number) {
+      //     return;
+      //   }
+      //   var temp = fact;
+      //   fact = fact * n;
+      //   console.log(temp + " x " + n + " x " + fact);
+      //   n++;
+      //   factr(n);
+      // }
+      // factr(2);
+    </script>
+  </head>
+  <body>
+    <h1>Factorial of a Number</h1>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check String Starts and ends with Certain CHaracters</title>
+    <script>
+      var string = prompt("Please ENter a string");
+      var textStart = string.startsWith("w");
+      var textENd = string.endsWith("e");
+      console.log(string);
+      console.log(`Starts: ${textStart}`);
+      console.log(`ENds: ${textENd}`);
+      if (textStart == true && textENd == true) {
+        console.log(`${string} string with W and ends with e `);
+      } else if (textStart == true && textENd == false) {
+        console.log(`${string} string with W `);
+      } else if (textStart == false && textENd == true) {
+        console.log(`${string} end with e`);
+      } else if (textStart == false && textENd == false) {
+        console.log(`${string} neither start and end with e`);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Check String Starts and ends with Certain CHaracters</h1>
+  </body>
+</html>

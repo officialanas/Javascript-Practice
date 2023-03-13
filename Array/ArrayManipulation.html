@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Manipulation</title>
+    <script>
+      //1   toString() converts an array to a string separated by a comma.
+      //   let colors = ["green", "yellow", "blue"];
+      //   console.log(colors.toString()); // green,yellow,blue
+
+      // 2  join() combines all array elements into a string.
+      // let colors = ["green", "yellow", "blue"];
+      // document.write(colors.join("-")); // green-yellow-blue
+
+      // 3  concat combines two arrays together or add more items to an
+      //    array and then return a new array.
+      // let firstNumbers = [1, 2, 3];
+      // let secondNumbers = [4, 5, 6];
+      // let merged = firstNumbers.concat(secondNumbers);
+      // document.write(merged); // [1, 2, 3, 4, 5, 6]
+
+      //  4 push() adds item(s) to the end of an array and changes the
+      // original array.
+      // let browsers = ["chrome", "firefox", "edge"];
+      // browsers.push("safari", "opera mini");
+      // document.write(browsers);
+      // ["chrome", "firefox", "edge", "safari", "opera mini"]
+
+      // 5  pop() removes the last item of an array and returns it
+      // let browsers = ["chrome", "firefox", "edge"];
+      // browsers.pop(); // "edge"
+      // console.log(browsers); // ["chrome", "firefox"]
+
+      // 6  shift() removes the first item of an array and returns it
+      //   let browsers = ["chrome", "firefox", "edge"];
+      //   browsers.shift(); // "chrome"
+      //   console.log(browsers); // ["firefox", "edge"]
+
+      // 7  unshift() adds an item(s) to the beginning of an array and
+      //changes the original array.
+      //   let browsers = ["chrome", "firefox", "edge"];
+      //   browsers.unshift("safari");
+      //   console.log(browsers); //  ["safari", "chrome", "firefox", "edge"]
+
+      // 8  splice() changes an array, by adding, removing and inserting
+      //elements.
+
+      // 9  slice() copies a given part of an array and returns that
+      // copied part as a new array. It does not change the original
+      // array.             //  array.slice(start, end)
+
+      // Type A
+      // let numbers = [1, 2, 3, 4];
+      // numbers.slice(0, 3);
+      // // returns [1, 2, 3]
+      // console.log(numbers); // returns the original array
+
+      // Type B
+      // let message = "congratulations";
+      // const abbrv = message.slice(0, 7) + "s!";
+      // console.log(abbrv); // returns "congrats!"
+
+      // 10  split() divides a string into substrings and returns them as
+      // an array.
+
+      // Type A
+      // let firstName = "Ansari";
+      // // return the string as an array
+      // console.log(firstName.split()); // ["Bolaji"]
+
+      // Type B
+      //   let firstName = "hello, my name is bolaji, I am a dev.";
+      //   firstName.split(",", 2); // ["hello", " my name is bolaji"]
+
+      // Type C
+      //   let firstName = "Bolaji";
+      //   firstName.split(""); // ["B", "o", "l", "a", "j", "i"]
+
+      //11   indexOf() looks for an item in an array and returns the index where
+      // it was found else it returns -1
+
+      // let fruits = ["apple", "orange", false, 3];
+      // fruits.indexOf("orange"); // returns 1
+      // fruits.indexOf(3); // returns 3
+      // console.log(fruits.indexOf(null)); // returns -1 (not found)
+
+      // 12  lastIndexOf() looks for an item from right to left and returns the
+      // last index where the item was found.
+
+      //   let fruits = ["apple", "orange", false, 3, "apple"];
+      //   fruits.lastIndexOf("apple"); // returns 4
+
+      //13   filter() creates a new array if the items of an array pass a
+      //certain condition.
+      //   const countryCode = ["+234", "+144", "+233", "+234"];
+      //   const nigerian = countryCode.filter((code) => code === "+234");
+      //   console.log(nigerian); // ["+234", "+234"]
+
+      // 14  map() creates a new array by manipulating the values in an array.
+      //   // adds dollar sign to numbers
+      //   const numbers = [10, 3, 4, 6];
+      //   const dollars = numbers.map((number) => "$" + number);
+      //   console.log(dollars);
+      //   // ['$10', '$3', '$4', '$6'];
+
+      // 15  reduce() calculates a single value based on an array.
+      //   const numbers = [100, 300, 500, 70];
+      //   const sum = numbers.reduce((accummulator, value) => accummulator + value);
+      //   console.log(sum); // still returns 970
+
+      //  16 forEach() iterates through an array, it applies a function on all
+      // items in an array
+
+      // const colors = ["green", "yellow", "blue"];
+      // colors.forEach((item, index) => console.log(index, item));
+      // returns the index and the every item in the array
+      // 0 "green"
+      // 1 "yellow"
+      // 2 "blue"
+
+      //  17 every() checks if all items in an array pass the specified condition
+      // and return true if passed, else false.
+      //   const numbers = [1, -1, 2, 3];
+      //   let allPositive = numbers.every((value) => {
+      //     return value >= 0;
+      //   });
+      //   console.log(allPositive); // would return false
+
+      //  18 some() checks if an item (one or more) in an array pass the
+      // specified condition and return true if passed, else false.
+      // const numbers = [1, -1, 2, 3];
+      // let atLeastOnePositive = numbers.some((value) => {
+      //   return value >= 0;
+      // });
+      // console.log(atLeastOnePositive); // would return true
+
+      //  19 includes() checks if an array contains a certain item.
+      // let users = ["paddy", "zaddy", "faddy", "baddy"];
+      // console.log( users.includes("baddy")); // returns true
+    </script>
+  </head>
+  <body>
+    <h1>Array Manipulations</h1>
+  </body>
+</html>

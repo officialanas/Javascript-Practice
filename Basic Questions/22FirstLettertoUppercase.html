@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Letter of a string in to a uppercase</title>
+    <script>
+      //charAt - to get a character at a index
+      // toUpperCase- slice
+      // var string = prompt("Please neter a string");
+      // console.log("enter" + string);
+      // var first = string.charAt(0);
+      // var rem = string.slice(1);
+      // var caps = first.toUpperCase() + rem;
+      // console.log("UpperCase " + caps);
+
+      // or
+
+      // COnvert the first letter to uppercase
+      // var string = "anas ansari";
+      // var first = string.charAt(0);
+      // var rem = string.slice(1);
+      // var caps = first.toUpperCase() + rem;
+      // console.log(caps);
+
+      //or Capital to every word
+
+      // const str1 = "Welcome to this world";
+      // function capital(str) {
+      //   return str
+      //     .split(" ")
+      //     .map((value) => value.slice(0, 1).toUpperCase() + value.slice(1));
+      // }
+      // console.log(capital(str1));
+
+      //   how to uppercase the first charater in a string array
+      let months = ["january", "february", "march", "april"];
+
+      for (let month of months) {
+        month = month.charAt(0).toUpperCase() + month.substring(1);
+        console.log(month);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>First Letter of a string in to a uppercase</h1>
+  </body>
+</html>
