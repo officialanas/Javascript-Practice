@@ -8,17 +8,24 @@
     <script>
       //Palindrome is same forward or backword ex -dad  , madam
       // dad , madam - split() , reverse(), join()
-      var string = prompt("enter the string");
-      var stringArray = string.split("");
-      var stringrevese = stringArray.reverse();
-      var revJoin = stringrevese.join("");
+      // var string = prompt("enter the string");
+      // var stringArray = string.split("");
+      // var stringrevese = stringArray.reverse();
+      // var revJoin = stringrevese.join("");
 
-      if (string === revJoin) {
-        console.log(`${string} : Is Palindrome`);
-      } else {
-        console.log(`${string} : Is not a  Palindrome`);
-      }
-      console.log("Revere the String -  " + revJoin);
+      // if (string === revJoin) {
+      //   console.log(`${string} : Is Palindrome`);
+      // } else {
+      //   console.log(`${string} : Is not a  Palindrome`);
+      // }
+      //console.log("Revere the String -  " + revJoin);
+
+      // 2methods
+      const isPalindrome = function (x) {
+        return x === +x.toString().split("").reverse().join("");
+      };
+      const res = isPalindrome(101);
+      console.log(res);
     </script>
   </head>
   <body>
