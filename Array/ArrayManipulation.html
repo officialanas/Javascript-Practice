@@ -139,6 +139,52 @@
       //  19 includes() checks if an array contains a certain item.
       // let users = ["paddy", "zaddy", "faddy", "baddy"];
       // console.log( users.includes("baddy")); // returns true
+
+      //20 how to replace an element in an array
+      // const _ = [7, 8];
+      // _[0] = 5;
+      // console.log(_); // 5,8
+
+      // //find and replace
+      // let index = _.indexOf(5);
+      // _[index] = 7;
+      // console.log(_); // 7,8
+
+      // _.splice(index, 1, "hi");
+      // console.log(_);
+
+      //21 Sort an array of object by string property value
+      // const cities = [
+      //   { name: "Istanbul", views: 617 },
+      //   { name: "Bengaluru", views: 1247 },
+      //   { name: "Hyderabad", views: 6217 },
+      //   { name: "New york", views: 217 },
+      // ];
+
+      // cities.sort((city1, city2) => {
+      //   city1 = city1.name.toLowerCase();
+      //   city2 = city2.name.toLowerCase();
+      //   if (city1 < city2) {
+      //     return -1;
+      //   }
+      //   if (city1 > city2) {
+      //     return 1;
+      //   }
+      //   return 0;
+      // });
+      // console.table(cities);
+
+      // 22 Use Reduce method to sum property values of an array of object
+      // const scorer = [
+      //   { name: "Adem", goals: 30 },
+      //   { name: "Bulint", goals: 20 },
+      //   { name: "Adem", goals: 15 },
+      // ];
+      // const totalGoals = scorer.reduce(
+      //   (total, scorer) => total + scorer.goals,
+      //   0
+      // );
+      // console.log(totalGoals);
     </script>
   </head>
   <body>

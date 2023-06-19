@@ -7,12 +7,15 @@
     <title>Promise</title>
     <script>
       // 1 -For Resolve
-      // var data = new Promise(function (resolve, reject) {
-      //   resolve("new State");
+      var data = new Promise(function (resolve, reject) {
+        resolve("new State");
+      });
+      // data.then((val) {
+      //   console.log(val); // new State
       // });
-      // data.then(function (val) {
-      //   console.log(val);  // new State
-      // });
+      data.then((data) => {
+        console.log(data);
+      });
 
       // 2 - For Reject
       // var data = new Promise(function (resolve, reject) {
@@ -28,9 +31,37 @@
       //     console.log(errorMessage); // Promise Rejected
       //   }
       // );
+
+      // example 3
+      //       const resolveBtn = document.querySelector('#resolve-btn');
+      //            const rejectBtn = document.querySelector('#reject-btn');
+
+      //      const p = new Promise((resolve, reject) => {
+      //   // resolveBtn.addEventListener('click', () => {
+      //   //   resolve('Promise Resolved');
+      //   // });
+
+      //   // rejectBtn.addEventListener('click', () => {
+      //   //   reject('Promise Reject');
+      //   // });
+      // });
+
+      // p.then((data) => {
+      //   console.log(data)
+      // }).catch((err)=> {
+      //   console.log(err)
+      // }).finally(()=>  {
+      //       console.log('Finally');
+      //  })
     </script>
   </head>
   <body>
     <h1>Promise</h1>
+
+    <!-- example 3 -->
+
+    <!-- <button id="resolve-btn">Resolve</button>
+    </br>
+    <button id="reject-btn">Reject</button> -->
   </body>
 </html>

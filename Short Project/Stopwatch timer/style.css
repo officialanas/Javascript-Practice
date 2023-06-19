@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  background-color: #131313;
+}
+h1 {
+  color: #f5f5f5;
+  font-size: 40px;
+}
+table {
+  margin: auto;
+}
+th {
+  color: #ffffff;
+}
+input {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+button {
+  min-width: 120px;
+  margin: 20px 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  color: #f5f5f5;
+}
+.heading {
+  color: #f5f5f5;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.time {
+  background-color: #090909;
+  color: #ffffff;
+  font-size: 100px;
+  width: 150px;
+  margin: 0 10px;
+}
